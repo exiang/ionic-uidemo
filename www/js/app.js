@@ -104,7 +104,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: '/form',
       views: {
         'menuContent': {
-          templateUrl: 'templates/form.html',
+			templateUrl: 'templates/form.html',
+			controller: 'FormCtrl'
+        }
+      }
+    })
+	.state('app.slider', {
+      url: '/slider',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/slider.html',
         }
       }
     })
@@ -132,6 +141,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+	
 	.state('app.range', {
       url: '/range',
       views: {
@@ -240,3 +250,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
 });
+
+

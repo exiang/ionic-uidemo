@@ -1,1 +1,11 @@
 /* Empty. Add your own CSS if you like */
+.box
+{
+	height:400px;
+}
+
+.box-blue{background:#aaffff;}
+.box-green{background:#aaffaa;}
+.box-yellow{background-color:#ffffaa;}
+
+.col-demo{background:#eee; margin:2px;}

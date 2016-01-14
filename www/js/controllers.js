@@ -53,4 +53,15 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+
+.controller('FormCtrl', function($scope) {
+	$scope.form = {name: "Yee Siang", num1:0, num2:0}
+	$scope.onNameChange = function () {
+		console.log($scope.form);
+	};
+
+})
+
+;

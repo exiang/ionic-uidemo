@@ -1,5 +1,24 @@
 <ion-view view-title="Form">
   <ion-content>
     <h1>Form</h1>
+	<div class="card">
+		<div class="item item-divider">Copywriter</div>
+		<div class="list">
+			<label class="item item-input"><input type="text" placeholder="Name" ng-model="form.name" ng-change="onNameChange()" /></label>
+		</div>
+		<div class="item item-divider"><span ng-if="form.name">{{form.name + " is handsome"}}</span></div>
+	</div>
+	
+	<div class="card">
+		<div class="item item-divider">Calculator</div>
+		<div class="list">
+			<label class="item item-input"><input type="text" placeholder="Number 1" ng-model="form.num1" /></label>
+		</div>
+		<div class="list">
+			<label class="item item-input"><input type="text" placeholder="Number 2" ng-model="form.num2" /></label>
+		</div>
+		<!-- refer: http://stackoverflow.com/questions/12755558/how-to-sum-two-fields-in-angularjs-and-show-the-result-in-an-label -->
+		<div class="item item-divider">{{(form.num1*1) + (form.num2*1)}}</span></div>
+	</div>
   </ion-content>
 </ion-view>
