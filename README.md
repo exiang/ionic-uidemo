@@ -11,3 +11,6 @@ On adding android platform:
 
 On generating Icon and Screenshot:
 https://github.com/driftyco/ionic-cli#icon-and-splash-screen-image-generation
+
+```ionic resources --icon
+ionic resources --splash```
