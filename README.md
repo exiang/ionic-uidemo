@@ -26,3 +26,7 @@ https://github.com/driftyco/ionic-cli#icon-and-splash-screen-image-generation
 ```ionic resources --icon```
 
 ```ionic resources --splash```
+
+## On building android app
+
+``` ionic build android ```
