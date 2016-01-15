@@ -64,4 +64,20 @@ angular.module('starter.controllers', [])
 
 })
 
+.controller('JsonCtrl', function($scope, $http, $ionicLoading){
+	$scope.items = null;
+	
+	// better way of doing loading, pls refer to http://learn.ionicframework.com/formulas/loading-screen-with-interceptors/
+	$ionicLoading.show({
+		template: '<ion-spinner icon="bubbles" class="spinner-calm"></ion-spinner><p>Loading...</p>'
+	})
+	$http.get('http://jsonplaceholder.typicode.com/posts').then(function(json) {
+		$ionicLoading.hide();
+		$scope.items = json.data;
+		//console.log(json);
+	}, function(err) {
+	})
+	
+})
+
 ;
