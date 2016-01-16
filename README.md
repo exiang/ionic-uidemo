@@ -30,3 +30,7 @@ https://github.com/driftyco/ionic-cli#icon-and-splash-screen-image-generation
 ## On building android app
 
 ``` ionic build android ```
+
+## Sample of built android apk
+  * Inside _sandbox/android-debug.apk
+  * Transfer to phone: https://www.airdroid.com/
